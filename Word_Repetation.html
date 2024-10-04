@@ -1,0 +1,20 @@
+<script>
+  str = "hello world";
+  emp = "";
+  for (i of str) {
+    if (!emp.includes(i)) {
+      emp += i;
+    }
+  }
+  emp = emp.split("").sort().join("").trim();
+  // console.log(emp);
+  for (i of emp) {
+    c = 0;
+    for (j of str) {
+      if (i == j) {
+        c++;
+      }
+    }
+    console.log(i + "-" + c);
+  }
+</script>

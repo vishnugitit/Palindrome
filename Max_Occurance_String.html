@@ -1,0 +1,24 @@
+<script>
+    
+str = prompt("enter a string :");
+      (emp = ""), (maxstr = ""), (max = 0);
+      for (i of str) {
+        if (!emp.includes(i)) {
+          emp += i;
+        }
+        for (i of emp) {
+          c = 0;
+          for (j of str) {
+            if (i == j) c++;
+          }
+          if (c > max) {
+            max = c;
+            maxstr = i;
+          }
+        }
+        // console.log(i+"-"+c)
+      }
+      alert(maxstr);
+
+
+</script>
